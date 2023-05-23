@@ -1,15 +1,13 @@
-interface IExpenseItem{
 
-    expenseDescription : string,
+interface IExpenseItem{
+    
+    expenseDescription: string,
     payeeName: string,
-    price: number,
+    price: number, 
     date: Date,
     id: number
-  
-  }
-  
-  export type IExpenseCreateItem = Omit<IExpenseItem, "id">
-  
-  // export {IExpenseItem}
-  
-  export default IExpenseItem;
+}
+
+export type IExpenseCreateItem = Omit<IExpenseItem, "id">
+
+export default IExpenseItem;

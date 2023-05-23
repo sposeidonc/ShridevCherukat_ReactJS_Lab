@@ -4,113 +4,92 @@
       "expenseDescription": "expense-3",
       "payeeName": "Ramesh",
       "price": 500,
-      "date": "2023-02-26",
+      "date": "2023-02-26T00:17:38.930Z",
       "id": 3
     },
     {
       "expenseDescription": "expense-2",
-      "payeeName": "Rahul",
+      "payeeName": "Ramesh",
       "price": 200,
-      "date": "2023-02-26",
+      "date": "2023-02-26T00:17:38.930Z",
       "id": 2
     },
     {
       "expenseDescription": "test-2",
-      "payeeName": "Ramesh",
+      "payeeName": "Rahul",
       "price": 100,
-      "date": "2023-02-26",
+      "date": "2023-02-26T00:23:02.173Z",
       "id": 4
     },
     {
       "expenseDescription": "test-3",
       "payeeName": "Rahul",
       "price": 123,
-      "date": "2023-02-01",
+      "date": "2023-02-01T00:00:00.000Z",
       "id": 5
     },
     {
       "expenseDescription": "test-6",
-      "payeeName": "Ramesh",
+      "payeeName": "Rahul",
       "price": 600,
-      "date": "2023-02-01",
+      "date": "2023-02-01T00:00:00.000Z",
       "id": 6
     },
     {
       "expenseDescription": "Internet Bill",
-      "payeeName": "Rahul",
+      "payeeName": "Ramesh",
       "price": 100,
-      "date": "2023-02-01",
+      "date": "2023-02-01T00:00:00.000Z",
       "id": 7
     },
     {
       "expenseDescription": "Movie Expenses",
-      "payeeName": "Ramesh",
+      "payeeName": "Rahul",
       "price": 600,
-      "date": "2023-02-01",
+      "date": "2023-02-01T00:00:00.000Z",
       "id": 8
     },
     {
-      "expenseDescription": "Trip to germany",
-      "payeeName": "Ramesh",
-      "price": 123456,
-      "date": "2023-05-17",
+      "expenseDescription": "Trip to US",
+      "payeeName": "Rahul",
+      "price": 123,
+      "date": "2023-05-24T00:00:00.000Z",
       "id": 9
     },
     {
-      "expenseDescription": "Trip to Spain",
-      "payeeName": "Ramesh",
-      "price": 22222,
-      "date": "2023-05-22",
+      "expenseDescription": "Trip to Europe",
+      "payeeName": "Rahul",
+      "price": 12344,
+      "date": "2023-05-25T00:00:00.000Z",
       "id": 10
     },
     {
-      "expenseDescription": "Rent Car",
+      "expenseDescription": "new item",
       "payeeName": "Ramesh",
-      "price": 11111,
-      "date": "2023-05-25",
+      "price": 15,
+      "date": "2023-05-05T00:00:00.000Z",
       "id": 11
     },
     {
-      "expenseDescription": "1",
+      "expenseDescription": "ticket",
       "payeeName": "Ramesh",
-      "price": 2,
-      "date": "2023-06-01",
+      "price": 100,
+      "date": "2023-05-23T00:00:00.000Z",
       "id": 12
     },
     {
-      "expenseDescription": "Buy Car",
-      "payeeName": "Rahul",
-      "price": 1111,
-      "date": "2023-05-26",
+      "expenseDescription": "disco",
+      "payeeName": "Ramesh",
+      "price": 4000,
+      "date": "2023-05-25T00:00:00.000Z",
       "id": 13
     },
     {
-      "expenseDescription": "grocery",
-      "payeeName": "Rahul",
-      "price": 310,
-      "date": "2023-05-11T00:00:00.000Z",
-      "id": 14
-    },
-    {
-      "expenseDescription": "Theme Park",
-      "payeeName": "Rahul",
-      "price": 3450,
-      "date": "2023-05-25T00:00:00.000Z",
-      "id": 15
-    },
-    {
-      "expenseDescription": "TestForScreenshot",
+      "expenseDescription": "Coffee",
       "payeeName": "Ramesh",
-      "price": 4000,
+      "price": 200,
       "date": "2023-05-23T00:00:00.000Z",
-      "id": 16
-    },
-    {
-      "expenseDescription": "clothes",
-      "payeeName": "Rahul",
-      "price": 590,
-      "date": "2023-05-17T00:00:00.000Z",
-      "id": 17
+      "id": 14
     }
   ]
 }

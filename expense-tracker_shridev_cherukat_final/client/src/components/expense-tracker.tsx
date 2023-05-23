@@ -1,63 +1,58 @@
-import {useEffect, useState} from "react";
-
-import {getAllExpenseItems} from "../services/expense"
-
-import {Container} from "react-bootstrap"
-import { ExpenseItems } from "./expense-items";
-import IExpenseItem from "../models/expense";
+import { useEffect, useState } from "react"
+import { getAllExpenseItems } from "../services/expenses";
+import { Container } from "react-bootstrap";
 import { ExpenseSummary } from "./expense-summary";
-import { ExpenseCreator } from "./expense-creator";
+import IExpenseItem from "../models/expense";
+import { ExpenseItems } from "./expense-items";
+import { ExpenseCreator } from "./expense-adder";
+
+
 
 const ExpenseTracker = () => {
 
-  const [expenseItems, setExpenseItems] = useState<IExpenseItem[]>([]);
-
-  useEffect(() => {
-
-    const getAllExpenseItemsInvoker = async () => {
-
-      const response = await getAllExpenseItems();
-      console.log(`Response is ${JSON.stringify(response)}`);
-
-      setExpenseItems(response);
-    }
-
-    getAllExpenseItemsInvoker();
-
-  }, [])
-
-  const refreshForNewExpenseAddition = (newExpenseItem : IExpenseItem) => {
-    
-    // Array - 5 (a, b, c,d, e)
-    // new Item - 1
-
-    // setExpenseItems ([1, a, b, c, d, e])
-
-    console.log("Called from the child component [Expense Creator] component..")
+    const [expenseItems, setExpenseItems] = useState<IExpenseItem[]>([]);
   
-    setExpenseItems(
-      [newExpenseItem, ...expenseItems]
-    )
-  }
-
-  return (
+    useEffect(() => {
+  
+      const getAllExpenseItemsInvoker = async () => {
+  
+        const response = await getAllExpenseItems();
+        console.log(`Response is ${JSON.stringify(response)}`);
+  
+        setExpenseItems(response);
+      }
+  
+      getAllExpenseItemsInvoker();
+  
+    }, [])
+  
+    const refreshForNewExpenseAddition = (newExpenseItem : IExpenseItem) => {
+  
+      console.log("Called from the child component [Expense Creator] component..")
     
-    <Container>
-
-      <h2>
-        Expense Tracker
-
-        <ExpenseCreator expenseItems={expenseItems} refreshForNewExpenseAddition={refreshForNewExpenseAddition}></ExpenseCreator>
-
-      </h2>
-
-      <ExpenseItems expenseItems={expenseItems}></ExpenseItems>
-
-      <ExpenseSummary expenseItems={expenseItems}></ExpenseSummary>
-    </Container>
-
-  )
-
-}
-
-export {ExpenseTracker}
+      setExpenseItems(
+        [newExpenseItem, ...expenseItems]
+      )
+    }
+  
+    return (
+      
+      <Container>
+  
+        <h2>
+          Expense Tracker Application
+  
+          <ExpenseCreator expenseItems={expenseItems} refreshForNewExpenseAddition={refreshForNewExpenseAddition}></ExpenseCreator>
+  
+        </h2>
+  
+        <ExpenseItems expenseItems={expenseItems}></ExpenseItems>
+  
+        <ExpenseSummary expenseItems={expenseItems}></ExpenseSummary>
+      </Container>
+  
+    )
+  
+  }
+  
+  export {ExpenseTracker}

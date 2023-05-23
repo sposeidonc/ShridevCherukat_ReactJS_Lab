@@ -6,12 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
   return (
     <div className="App">
-
-      <ExpenseTracker></ExpenseTracker>
-
+     <ExpenseTracker></ExpenseTracker>
     </div>
   );
 }
-
 
 export default App;
